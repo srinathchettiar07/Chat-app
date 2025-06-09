@@ -9,12 +9,12 @@ const io = new Server(server, {
     origin: ["http://localhost:5173"],
   }
 })
-
+const userSocketmap = {};
 export function getReceiverSocketId(userId)
 {
   return userSocketmap[userId];
 }
-const userSocketmap = {};
+
 io.on('connection', (socket) => {
         console.log('A user connected:', socket.id);
         const userId = socket.handshake.query.userId; // Assuming userId is sent as a query parameter
