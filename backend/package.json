@@ -4,7 +4,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon src/server.js"
+    "dev": "node src/server.js",
+    "start": "node src/server.js"
   },
   "keywords": [],
   "author": "",
@@ -25,7 +26,6 @@
     "passport": "^0.7.0",
     "socket.io": "^4.8.1",
     "stream-chat": "^8.60.0",
-    "streamify": "file:..",
     "tailwind": "^4.0.0"
   }
 }
